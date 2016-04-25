@@ -1,0 +1,31 @@
+{
+  "name": "lightmusic",
+  "version": "0.0.1",
+  "description": "generate music with light sensors",
+  "main": "app.js",
+"dependencies": {
+    "speaker": "^0.3.0",
+    "serialport": "2.0.0",
+    "audio-generator": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeecos/LightMusic.git"
+  },
+  "keywords": [
+    "lightsensor",
+    "makeblock",
+    "arduino",
+    "raspberry",
+    "pi"
+  ],
+  "author": "ander@makeblock.cc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xeecos/LightMusic/issues"
+  },
+  "homepage": "https://github.com/xeecos/LightMusic#readme"
+}
