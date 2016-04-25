@@ -42,8 +42,7 @@ th.start()
 class PlotFigure(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, None, wx.ID_ANY, title="Sensor Monitor", size=(800, 600))
-        #设置窗口大小
-        #初始化MegaPi
+        #set window size
         self.fig = Figure((8, 6), 100)
         self.canvas = FigureCanvas(self, wx.ID_ANY, self.fig)
         self.ax = self.fig.add_subplot(111)
@@ -53,7 +52,6 @@ class PlotFigure(wx.Frame):
         self.ax.set_xticks([])
         self.ax.set_yticks(range(0, 101, 10))
         self.ax.grid(True)
-        #设置网格标志
         self.user = [None] * POINTS
         self.l_user,=self.ax.plot(range(POINTS),self.user,label='Light Sensors')
         self.ax.legend(loc='upper center',
